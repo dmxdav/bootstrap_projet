@@ -1,0 +1,26 @@
+/* UTILISATION DE FLEXBOX */
+
+/* .container { */
+/* display: flex; */
+/* POUR ESPASSER LES DIV */
+/* justify-content: space-evenly; */
+/* POUR CENTRER LES DIV */
+/* align-items: center;
+  background-color: lightgrey;
+  height: 100px;
+} */
+/* ------------------------------------------------------- */
+.box-1 {
+  background-color: green;
+}
+.box-2 {
+  background-color: yellow;
+}
+.box-3 {
+  background-color: red;
+}
+/* UTILISATION DU GRID */
+/* .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+} */

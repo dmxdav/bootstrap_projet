@@ -1,0 +1,66 @@
+/* ------------------------------------------------------- */
+/* Adopter une philosophie MOBILE FRIST */
+/* --------------------------------------------------- */
+/* faire son prope reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* voici une variable */
+:root {
+  --primary: blue;
+  --white: white;
+}
+/* ------------------------------------------------- */
+ul {
+  list-style-type: none;
+}
+/* ---------------Télephone MOBILE------------------------------------- */
+/* fait disparaitre ce bouton ------------------------------*/
+nav #hamburger-menu-input,
+.nav-list {
+  display: none;
+}
+/* espace les élement de la nav--------------------- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--primary);
+}
+nav * {
+  color: var(--white);
+}
+nav a {
+  text-decoration: none;
+}
+/* lorsque je clic sur ce bouton tu affiche la nav-list */
+nav #hamburger-menu-input:checked + .nav-list {
+  display: flex;
+  /* fait de l'espacement verticalement-------------- */
+  flex-direction: column;
+  /* prend une autre position---------------------- */
+  position: absolute;
+  top: 35px;
+  background-color: var(--primary);
+  width: 100%;
+  left: 0;
+  padding-left: 10px;
+}
+nav .nav-list li {
+  margin: 10px 0px;
+}
+/* ----Sur grand ecran (desktop)-------------------------- */
+@media screen and (min-width: 900px) {
+  nav .hamburger-menu-label {
+    display: none;
+  }
+  nav .nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+  }
+}
